@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import {Heading, Text} from "@chakra-ui/react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Heading as="h1" size="lg" textAlign="center" letterSpacing={"tighter"}>
+                <Text>Oh shit, here we go again...</Text>
+            </Heading>
+        </div>
+    );
 }
 
 export default App;
