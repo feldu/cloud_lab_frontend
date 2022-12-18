@@ -1,6 +1,6 @@
-import AuthHeader from "../AuthHeader";
+import AuthHeader from "../components/AuthHeader";
 import {Flex} from "@chakra-ui/react";
-import SignUpForm from "./SignUpForm";
+import SignUpForm from "./components/SignUpForm";
 
 export default function SignUpPage() {
     return (

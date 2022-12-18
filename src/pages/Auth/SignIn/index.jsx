@@ -1,8 +1,8 @@
 import React from "react";
 
 import {Flex} from "@chakra-ui/react";
-import AuthHeader from "../AuthHeader";
-import SignInForm from "./SignInForm";
+import AuthHeader from "../components/AuthHeader";
+import SignInForm from "./components/SignInForm";
 
 
 

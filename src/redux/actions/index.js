@@ -4,8 +4,8 @@ export const signIn = currentUser => ({
     type: constants.SIGN_IN,
     payload: currentUser
 });
-export const signOut = () => ({
-    type: constants.SIGN_OUT,
+export const logout = () => ({
+    type: constants.LOGOUT,
 });
 
 export const showMessage = message => ({
@@ -15,4 +15,14 @@ export const showMessage = message => ({
 
 export const hideMessage = () => ({
     type: constants.HIDE_MESSAGE,
+});
+
+export const updatePlants = plants => ({
+    type: constants.UPDATE_PLANTS,
+    payload: plants
+});
+
+export const addPlant = plant => ({
+    type: constants.ADD_PLANT,
+    payload: plant
 });

@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button, FormControl, FormLabel, Icon, Input, InputGroup, InputRightElement} from "@chakra-ui/react";
 import {ViewIcon, ViewOffIcon} from "@chakra-ui/icons";
 
 export default function PasswordControl({label, placeholder, value, setValue}) {
-    const [show, setShow] = React.useState(false);
+    const [show, setShow] = useState(false);
     return (
         <FormControl m6={6} isRequired={true}>
             {label && <FormLabel>{label}</FormLabel>}
