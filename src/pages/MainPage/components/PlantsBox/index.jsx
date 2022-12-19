@@ -9,8 +9,10 @@ export default function PlantsBox({plants}) {
                     <Box key={key} p={5} m={3} borderWidth={1} borderRadius={14} boxShadow="lg">
                         <Heading size="md">Plant №{p.id}</Heading>
                         <Text>Name: {p.name}</Text>
-                        <Text>Temperature: {p.temperature}</Text>
-                        <Text>Humidity: {p.humidity}</Text>
+                        <Text>Temperature: {p.temperature ? p.temperature : <b>Sensor not available</b>}</Text>
+                        <Text>Humidity: {p.humidity ? p.humidity : <b>Sensor not available</b>}</Text>
+                        <Text>Ground humidity: {p.groundHumidity ? p.groundHumidity : <b>Sensor not available</b>}</Text>
+                        <Text>Brightness: {p.brightness ? p.brightness : <b>Sensor not available</b>}</Text>
                         <Text><u>Settings:</u></Text>
                         <Text>Ground humidity border: {p.settings.groundHumidityBorder}</Text>
                         <Text>Brightness Border: {p.settings.brightnessBorder}</Text>
